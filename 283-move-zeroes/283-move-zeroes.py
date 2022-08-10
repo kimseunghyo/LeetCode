@@ -5,6 +5,7 @@ class Solution(object):
                 for j in range(i + 1, len(nums)):
                     if nums[j] == 0:
                         continue
+                        
                     else:
                         nums[i], nums[j] = nums[j], nums[i]
                         break
