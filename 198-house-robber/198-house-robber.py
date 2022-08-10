@@ -8,7 +8,7 @@ class Solution(object):
             if i == 1:
                 dp[i] = max(dp[i - 1], dp[i])
             else:
-                dp[i] = max(dp[i - 1], dp[i - 2] +dp[i])
+                dp[i] = max(dp[i - 1], dp[i - 2] + dp[i])
             
         return dp[-1]
         
