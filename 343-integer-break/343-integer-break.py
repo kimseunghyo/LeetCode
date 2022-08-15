@@ -3,15 +3,15 @@ class Solution(object):
         if n < 4:
             return n - 1
         
-        a = n % 3
-        b = n // 3
+        a = n // 3
+        b = n % 3
         
-        if a == 1:
-            return int(math.pow(3, b - 1) * 4)
+        if b == 1:
+            return int(math.pow(3, a - 1) * 4)
             
-        elif a == 2:
-            return int(math.pow(3, b) * 2)
+        elif b == 2:
+            return int(math.pow(3, a) * 2)
             
         else:
-            return int(math.pow(3, b))
+            return int(math.pow(3, a))
             
