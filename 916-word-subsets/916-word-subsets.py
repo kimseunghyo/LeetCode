@@ -14,7 +14,7 @@ class Solution(object):
             temp = True
             
             for key in subsets:
-                if key not in cnt_w1 or cnt_w1[key] < subsets[key]:
+                if cnt_w1[key] < subsets[key]:
                     temp = False
                     
                     break
