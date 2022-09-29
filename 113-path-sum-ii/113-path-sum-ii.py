@@ -14,7 +14,6 @@ class Solution(object):
             dfs(root.left, sum_node, path + [root.val])
             dfs(root.right, sum_node, path + [root.val])
             
-        
         dfs(root, 0, [])
         
         return res
