@@ -22,19 +22,8 @@ class Solution(object):
             return cnt
             
             
-        def pow(x, y):
-            if y == 1:
-                return x
-            
-            xy = pow(x, y // 2)
-            
-            if y % 2 == 0:
-                return xy * xy
-            
-            else:
-                return x * xy * xy
-        
-        return dfs(0, 0) % (pow(10, 9) + 7)
+        return dfs(0, 0) % 1000000007
+
                 
                 
         
