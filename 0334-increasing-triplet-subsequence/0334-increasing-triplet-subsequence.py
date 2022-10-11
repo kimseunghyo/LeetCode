@@ -1,10 +1,5 @@
 class Solution(object):
     def increasingTriplet(self, nums):
-        len_n = len(nums)
-        
-        if len_n < 3:
-            return
-        
         first = float("inf")
         second = float("inf")
         
