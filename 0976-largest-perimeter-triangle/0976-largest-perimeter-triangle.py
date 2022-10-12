@@ -5,7 +5,7 @@ class Solution(object):
         
         for i in range(len(nums) - 2):
             if nums[i] < nums[i + 1] + nums[i + 2]:
-                perimeter = max(perimeter, nums[i] + nums[i + 1] + nums[i + 2])
+                return nums[i] + nums[i + 1] + nums[i + 2]
 
         return perimeter
         
