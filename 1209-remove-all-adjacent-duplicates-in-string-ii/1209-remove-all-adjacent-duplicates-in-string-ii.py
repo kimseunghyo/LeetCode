@@ -1,6 +1,5 @@
 class Solution(object):
     def removeDuplicates(self, s, k):
-        res = ""
         stack = []
         stack.append([s[0], 1])
         
@@ -16,7 +15,4 @@ class Solution(object):
             else:
                 stack.append([s[i], 1])
                 
-        for c in stack:
-            res += c[0]
-            
-        return res                     
+        return "".join(c[0] for c in stack)      
