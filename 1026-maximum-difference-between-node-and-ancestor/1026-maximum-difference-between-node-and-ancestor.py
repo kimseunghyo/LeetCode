@@ -10,7 +10,7 @@ class Solution(object):
             if root.val < min_n:
                 min_n = root.val
                 
-            if max_n - min_n >= self.res:
+            if max_n - min_n > self.res:
                 self.res = max_n - min_n
             
             dfs(root.left, max_n, min_n)
