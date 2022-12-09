@@ -4,10 +4,10 @@ class Solution(object):
             if root is None:
                 return
             
-            if root.val >= max_n:
+            if root.val > max_n:
                 max_n = root.val
                 
-            if root.val <= min_n:
+            if root.val < min_n:
                 min_n = root.val
                 
             if max_n - min_n >= self.res:
