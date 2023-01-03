@@ -8,6 +8,5 @@ class Solution(object):
                     res += 1
                     
                     break
-                    
-                    
+                
         return res
